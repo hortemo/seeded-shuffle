@@ -45,4 +45,22 @@ describe("seededShuffle", () => {
   it("handles empty arrays", () => {
     expect(seededShuffle([], "seed")).toEqual([]);
   });
+
+  it("returns a new array instance", () => {
+    const arr = ["alpha", "beta", "gamma"] as const;
+    const shuffled = seededShuffle(arr, "seed");
+    expect(shuffled).not.toBe(arr);
+  });
+
+  it("normalizes numeric seeds to strings", () => {
+    const arr = [1, 2, 3, 4];
+    const numericSeedResult = seededShuffle(arr, 123);
+    const stringSeedResult = seededShuffle(arr, "123");
+    expect(numericSeedResult).toEqual(stringSeedResult);
+  });
+
+  it("produces the expected permutation for a known seed", () => {
+    const arr = [1, 2, 3, 4, 5];
+    expect(seededShuffle(arr, "fixed")).toEqual([1, 5, 2, 4, 3]);
+  });
 });
