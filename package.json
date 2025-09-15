@@ -1,5 +1,5 @@
 {
-  "name": "seeded-shuffle",
+  "name": "@hortemo/seeded-shuffle",
   "version": "1.0.0",
   "description": "Deterministic, seed-based shuffle for JS/TS.",
   "license": "MIT",

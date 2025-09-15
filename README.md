@@ -1,4 +1,4 @@
-# seeded-shuffle
+# @hortemo/seeded-shuffle
 
 > Deterministic, seed-based shuffle for JS/TS.
 
