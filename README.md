@@ -13,8 +13,8 @@ npm i seeded-shuffle
 ```ts
 import seededShuffle from "seeded-shuffle";
 
-const input = [1, 2, 3, 4, 5];
-const out = seededShuffle(input, "my-seed");
+const original = [1, 2, 3, 4, 5];
+const shuffled = seededShuffle(original, "my-seed");
 ```
 
 ## API
