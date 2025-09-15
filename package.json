@@ -1,6 +1,6 @@
 {
   "name": "@hortemo/seeded-shuffle",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deterministic, seed-based shuffle for JS/TS.",
   "license": "MIT",
   "author": "Henrik Hortemo",
