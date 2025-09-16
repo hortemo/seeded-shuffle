@@ -1,6 +1,6 @@
 {
   "name": "@hortemo/seeded-shuffle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Deterministic, seed-based shuffle for JS/TS.",
   "license": "MIT",
   "author": "Henrik Hortemo",
@@ -14,12 +14,12 @@
   "homepage": "https://github.com/hortemo/seeded-shuffle#readme",
   "type": "module",
   "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
+      "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     }
   },
